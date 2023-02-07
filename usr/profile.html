@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>苏格拉底网 ｜ Sugeladi.net ｜ 潜力 &middot;人格</title>
+  <meta name='description' content=''>
+  <meta name='keywords' content='性格测试 人才测评 婚恋匹配 人力资源 人格心理学' />
+  <meta name='author' content='kemin lau' >
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/keyframes.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/materialize.min.0.9.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/swiper.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/estyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style type="text/css">
+  </style>
+</head>
+<body>
+
+<!-- Page Contents -->
+    <div id="content" class="main animated fadein"> 
+      <header id="logo" class="hero m-20 right-align ">
+          <h1 class="logotext right-align teal-text text-lighten-2"><a href="/index.html">苏格拉底</a></h1>
+          <h4 class="logosub light">认识你自己</h4>
+        </header>
+      <div class="container">
+
+      <header><h2>用户资料</h2>
+        <p>请选填个人信息，部分信息将用于人格测量。</p>
+      </header>
+      </div>
+
+             <!-- Form Inputs -->
+      <div class="form-inputs p-20">
+          <h4>用户标识</h4>
+          <div class="row">
+            <div class="col s12 m6 l6">
+              <div class="input-field">
+                <input id="email" disabled type="email" class="validate" value="keminlau@hotmail.com">
+                <label for="email">邮箱</label>
+              </div>
+              <div class="input-field">
+                <input id="usrname" type="text" class="validate" value="Kemin">
+                <label for="usrname" data-error="wrong">用户名</label>
+              </div>
+            </div>
+          <div class="col s12 m6 l6">
+            <div class="file-field input-field">
+              <img src="/img/user-128.png" class="usr_image left">
+              <div class="btn">
+                <span>上传图片</span>
+                    <input type="file">
+              </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+            </div>
+          </div>
+    </div>
+
+          <h4>基本资料</h4>
+          <div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+              <select id="usrSex" required name="sex" tabindex="2" >
+                <option value="NULL" >请选择</option>                      
+                <option value="m" >男</option>
+                <option  value="f" >女</option>
+                <option value="g" >男同性恋者</option>
+                <option value="l" >女同性恋者</option>
+                <option value="x" >心理性别未定（生理男）</option>
+                <option value="x" >心理性别未定（生理女）</option>               
+              </select>              
+              <label>性别</label>
+              <span class="help-inline">为了保护用户隐私，心理性别只用于人格类型计算，在可以展示的地方只会显示你的生理性别，请放心选择你的真实心理性别。</span>
+              </div>
+              <div class="input-field col s12 m6 l6">
+              <select id="usrAge" class="" name="age" tabindex="3">
+                <option value="NULL">请选择</option>             
+                <option value="15" >15~18岁</option>
+                <option value="19" >19~22岁</option>
+                <option value="23" >23~28岁</option>
+                <option value="29" >29~32岁</option>
+                <option value="33" >33~35岁</option>
+                <option value="36" selected='selected'>36~40岁</option>
+                <option value="40" >40岁以上</option>
+              </select>
+              <label>年龄</label>
+              </div>
+            </div>
+            <div class="row">
+            <div class="input-field col s12 m6 l6">
+            <select id="usrEdu" class="" name="edu" tabindex="4" >
+                <option value="NULL">请选择</option>                
+                <option  value="shs" >高中或以下</option>
+                <option selected='selected' value="jcl">大专</option>
+                <option  value="mas">本科</option>
+                <option  value="ung">硕士</option>
+                <option  value="dr.">博士</option>
+                <option  value="pdr">博士以上</option>
+              </select>
+              <label>学力</label>
+            </div>
+              <div class="input-field col s12 m6 l6">
+            <select id="usrFirtlan" class="" name="first_lan" tabindex="5" ">
+                <option value="NULL" >请选择</option>                     
+                <option  value="cn">标准国语</option>
+                <option  value="fy">地方方言</option>
+                <option  value="en">英语</option>
+                <option  value="oo">其它外国语</option>
+              </select>
+              <label>母语</label>
+              <span class="help-inline">地方方言包括粤语、闽南语、客家语、台湾式国语和各种地方特色中国语；</span>
+            </div>
+          </div>
+            <div class="row">
+            <div class="input-field col s12 m6 l6">
+            <select id="usrProfession" class="" name="profession" tabindex="6" >
+                <option value="NULL" >请选择</option>                     
+                <option  value="xxx">无专业</option>
+                <option selected='selected' value="sci">理科</option>
+                <option  value="soc">文科</option>
+                <option  value="art">艺术类</option>
+                <option  value="spo">体育类</option>                               
+              </select>
+              <label>专业</label>
+            </div>
+              <div class="input-field col s12 m6 l6">
+            <select id="usrWorkof" class="" name="workof_years" tabindex="7">
+                <option value="NULL" >请选择</option>                      
+                <option  value="0">无工作经验</option>
+                <option   value="1">一年</option>
+                <option  value="3">三年</option>
+                <option selected='selected' value="5">五年</option>
+                <option  value="6">五年以上</option>
+              </select>
+              <label>工业年限</label>
+            </div>
+          </div>
+        </div>
+
+          <h4>婚恋资料</h4>
+          <div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+              <div class="input-field">
+                <input id="usrBirth" type="text" class="validate" value="1985" placeholder="请输入年份，必须是数字">
+                <label for="usrBirth">出生年份</label>
+              </div>            
+              </div>
+              <div class="input-field col s12 m6 l6">
+              <div class="input-field">
+                <input id="usrHeight" type="text" class="validate" value="171" placeholder="请输入身高，必须是数字">
+                <label for="usrHeight">身高</label>
+              </div>            
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+                <select id="usrBody" name="usrBody" tabindex="10">
+                  <option value="NULL" >请选择</option>                     
+                  <option selected='selected' value="n">身材匀称</option>
+                  <option   value="s">偏壮</option>
+                  <option  value="t">偏高</option>
+                  <option  value="f">偏胖</option>
+                  <option  value="i">偏瘦</option>
+                </select>
+                <label for="usrBody">体型</label>
+                <span class="help-inline">「偏壮」指性征突出，例如「男生魁梧」或「女生丰满」</span>
+              </div>
+              <div class="input-field col s12 m6 l6"></div>
+            </div>
+          </div>
+
+          <h4>其他资料</h4>
+          <div>
+            <div class="row">
+              <div class="input-field col s12 m6 l6">
+              <div class="input-field">
+                <input id="usrAddr" type="text" placeholder="选填">
+                <label for="usrAddr">目前所在地</label>
+              </div>            
+              </div>
+              <div class="input-field col s12 m6 l6">
+              <div class="input-field">
+                <input id="usrTel" type="text"  placeholder="选填">
+                <label for="usrTel">联系电话</label>
+              </div>            
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">自我简介</label>
+              </div>
+            </div>
+          </div>
+
+
+          <a class="waves-effect waves-light btn-large primary-color block" href="personality.html">保存</a>
+
+          </div><!-- END OF FORM-->
+
+          
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="page-footer primary-color">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <p class="center-align grey-text text-lighten-4">use rows and columns here to organize footer content.</p>
+                <div class="center-align">
+                  <i class="ion-social-facebook m-10 white-text"></i>
+                  <i class="ion-social-twitter m-10 white-text"></i>
+                  <i class="ion-social-pinterest m-10 white-text"></i>
+                  <i class="ion-social-dribbble m-10 white-text"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line white"></div>
+          <div class="footer-copyright primary-color">
+            <div class="container">
+            2019 Sugelati.net
+            <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+
+      </div> 
+      <!-- End of Page Contents -->
+
+      <!-- Menu Trigger -->
+      <div class="menu-trigger z-depth-2"> 
+        <div id="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>      
+      <!-- Menu -->
+      <nav id="menu" class="menu">
+        <div class="menu-navigation">
+          <ul class="full-menu collapsible">
+            <li class="logotext">苏格拉底</li>
+            <li>
+              <div class="collapsible-header">主页</div>
+              <div class="collapsible-body">
+                <ul class="collapsible">
+                  <li>
+                    <a href="/usr/profile.html">我的资料</a>
+                    <a href="/usr/personality.html">我的人格</a>
+                    <a href="/usr/friends.html">我的朋友</a>
+                    <a href="/usr/msg.html">我的消息</a>
+                    <a href="/usr/private.html">账号安全</a>                    
+                    <a href="/index.html">退出</a>                    
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">人格类型</div>
+              <div class="collapsible-body">
+                <ul class="collapsible">
+                  <li>
+                    <a href="/PTModel/utopia.html">理想国人格</a>
+                    <a href="/PTModel/jobs.html">职业人格</a>
+                    <a href="/PTModel/loves.html">婚恋人格</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">人格心理学</div>
+              <div class="collapsible-body">
+                <ul class="collapsible">
+                  <li>
+                    <a href="/personality/personality.html">什么是人格？</a>
+                    <a href="/personality/mbti.html">四国人格与MBTI的关系</a>
+                    <a href="/personality/assessment.html">什么是人才测评？</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">苏格拉底</div>
+              <div class="collapsible-body">
+                <ul class="collapsible">
+                  <li>
+                    <a href="/about/socrates.html">苏格拉底是什么？</a>
+                    <a href="/about/sugeladi.html">关于苏格拉底网？</a>
+                    <a href="/about/utopia.html">理想国人格</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="/contact.html" class="no-child">...</a></li>
+          </ul>
+        </div>
+      </nav> <!-- End of Menu -->
+      
+  <!--  Scripts-->
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/materialize.min.0.9.js"></script>
+  <script src="/js/swiper.min.js"></script>  
+<!--  <script src="js/masonry.min.js"></script>  
+  <script src="js/jquery.mixitup.min.js"></script>  
+  -->
+  <script src="/js/jquery.smoothState.min.js"></script> 
+  <script src="/js/functions.js"></script>
+  <script src="/js/init.js"></script>
+  <script type="text/javascript">
+    
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+  </script>
+
+  </body>
+</html>

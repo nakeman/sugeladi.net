@@ -1,0 +1,174 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+ /* @font-face {
+  font-family: 'SourceHanSansCN-Normal-Alphabetic';
+  src: url('webfont/SourceHanSansCN-Normal/SourceHanSansCN-Normal-Alphabetic.eot?#iefix') format('embedded-opentype'),  
+  		url('webfont/SourceHanSansCN-Normal/SourceHanSansCN-Normal-Alphabetic.otf')  format('opentype'),
+	    url('webfont/SourceHanSansCN-Normal/SourceHanSansCN-Normal-Alphabetic.woff') format('woff'), 
+	    url('webfont/SourceHanSansCN-Normal/SourceHanSansCN-Normal-Alphabetic.ttf')  format('truetype'), 
+	    url('webfont/SourceHanSansCN-Normal/SourceHanSansCN-Normal-Alphabetic.svg#SourceHanSansCN-Normal-Alphabetic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+ /* 多个格式的顺序
+That means the order in which you list the fonts is
+important. WOFF is generally preferred, since it’s a smaller file that downloads
+more quickly. WOFF2 is an optimized version of WOFF, and thus has the small-
+est file size—but it’s only supported in a few browsers. SVG is generally a much
+larger file. So you want to make sure that you list the fonts in a specific order to
+make sure browsers download the smallest font file that works for them: .eot,
+.woff2, .woff, .ttf, and .svg.
+ */
+
+ /* 可以忽略老式浏览器
+If you just need to support Internet Explorer 8 and more modern browsers, you can
+safely use just EOT, WOFF2, and WOFF files. In fact, if you’re no longer worried about
+Internet Explorer 8 (see the box on page 13), you can get away with just WOFF files!
+
+
+} 
+*/
+
+@font-face {
+  font-family: 'SourceHanSansCN-ExtraLight-Alphabetic';
+  src:  url('webfont/SY-extralight/SourceHanSansCN-ExtraLight-Alphabetic.eot?#iefix') format('embedded-opentype'),  
+        url('webfont/SY-extralight/SourceHanSansCN-ExtraLight-Alphabetic.otf')  format('opentype'),
+        url('webfont/SY-extralight/SourceHanSansCN-ExtraLight-Alphabetic.woff') format('woff'), 
+        url('webfont/SY-extralight/SourceHanSansCN-ExtraLight-Alphabetic.ttf')  format('truetype'), 
+        url('webfont/SY-extralight/SourceHanSansCN-ExtraLight-Alphabetic.svg#SourceHanSansCN-ExtraLight-Alphabetic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('webfont/logo/webfont.eot'); /* IE9 */
+    src: url('webfont/logo/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('webfont/logo/webfont.woff2') format('woff2'),
+    url('webfont/logo/webfont.woff') format('woff'), /* chrome、firefox */
+    url('webfont/logo/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('webfont/logo/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+
+
+
+/* use CDN Font on youziku.com */
+/**http://cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c37275ff629d808f030e40c.css
+ *
+ */
+
+@font-face {font-family: 'SiYuan-ExtraLig185a53e7431ef83';src: url('//cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c98dfe7f629d80f600c6247.gif?r=101916263407');src: url('//cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c98dfe7f629d80f600c6247.gif?r=101916263407?#iefix') format('embedded-opentype'),url('//cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c98dfe7f629d80f600c6247.png?r=101916263407') format('woff2'),url('//cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c98dfe7f629d80f600c6247.bmp?r=101916263407') format('woff'),url('//cdn.webfont.youziku.com/webfonts/nomal/126851/46870/5c98dfe7f629d80f600c6247.jpg?r=101916263407') format('truetype');font-weight: normal;font-style: normal;}.css185a53e7431ef83{font-family: 'SiYuan-ExtraLig185a53e7431ef83';}
+/* use CDN Font on youziku.com */
+
+
+h1,h5 {
+	font-family: 'SiYuan-ExtraLig185a53e7431ef83';
+  font-style: bold;
+
+}
+
+
+ h1.logotext{
+    font-family: 'webfont';
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: 0.5rem;
+    color: #4db6ac !important;
+    margin:0px;
+  }
+
+ h4.logosub{
+ 	font-family: 'webfont';
+    font-size: 2rem;
+    margin:5px;
+  }
+
+  body{
+    font-family:'SiYuan-ExtraLig185a53e7431ef83';
+    /*font-family: 'Source-Han-Ligh16dbcb9fde1ef83';*/
+
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+  font-family: "SiYuan-ExtraLig185a53e7431ef83", Helvetica, Arial, sans-serif;
+  
+  
+}
+
+
+.feature {
+  padding: 5px 0px 30px;
+}
+
+/* web页段落链接（渐变过渡）*/
+p > a{
+  color: #62ca9c;  
+  cursor: pointer;
+  transition: color 0.5s ease;
+  -moz-transition: color 1s ease;
+}
+
+p>a:hover{
+
+  color: #00695c;
+}
+
+
+.accent-text{
+  font-weight: bold;
+  color: inherit !important;
+}
+
+/* 用户头像*/
+.usr_image {
+    width: 64px;
+    margin: 0 10px 0 0;
+    border-radius: 4px;
+}
+
+
+/* #FORM */
+
+.input-field > label.active,
+input[type=email]:focus:not([readonly])+label,
+input[type=password]:focus:not([readonly])+label {
+  color:#26a69a;
+
+}
+
+/* 高级下拉列表字好小？！*/
+.select-wrapper + label {
+    position: absolute;
+    top: -14px;
+    font-size: 1.2rem;
+}
+
+.select-wrapper input.select-dropdown {
+    font-size: 1.5rem;
+}
+
+.help-inline{
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  top: -10px;
+  line-height: 150%;
+  color: red;
+
+
+}
